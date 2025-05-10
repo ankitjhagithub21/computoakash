@@ -1,7 +1,4 @@
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import { Textarea } from "@/components/ui/textarea";
+import ContactForm from "@/components/custom/ContactForm";
 
 
 export default function Contact() {
@@ -47,20 +44,7 @@ export default function Contact() {
       <p className="leading-relaxed mb-5 ">
         Post-ironic portland shabby chic echo park, banjo fashion axe
       </p>
-      <div className="relative mb-4">
-       <Label htmlFor="name" className={"mb-2"}>Name</Label>
-       <Input type="name" placeholder="Enter your name" />
-      </div>
-      <div className="relative mb-4">
-      <Label htmlFor="email" className={"mb-2"}>Email</Label>
-       <Input type="email" placeholder="Enter your email" />
-      </div>
-      <div className="relative mb-4">
-       <Label htmlFor="message" className={"mb-2"}>Message</Label>
-        <Textarea placeholder="Enter your message here..."/>
-      </div>
-     
-      <Button>Submit</Button>
+      <ContactForm/>
     </div>
   </div>
 </section>

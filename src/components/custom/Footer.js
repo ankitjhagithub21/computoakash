@@ -1,6 +1,6 @@
 import { Facebook, Github, Twitter, Youtube } from "lucide-react"
 
-
+import Link from "next/link"
 const Footer = () => {
   return (
     <footer className="bg-gray-50 w-full ml-auto dark:bg-gray-900 py-8 px-4 md:px-8 lg:px-24 text-gray-800 dark:text-gray-300 border-t z-50 relative">
@@ -8,30 +8,30 @@ const Footer = () => {
     <div className="md:ml-8">
       <h3 className="font-semibold text-gray-900 dark:text-white mb-4">Main</h3>
       <div className="flex flex-col space-y-2">
-        <a
+        <Link
           className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
           href="/"
         >
           Home
-        </a>
-        <a
+        </Link>
+        <Link
           className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
           href="/contact"
         >
           Contact
-        </a>
-        <a
+        </Link>
+        <Link
           className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
           href="/work"
         >
           Work With Us
-        </a>
-        <a
+        </Link>
+        <Link
           className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
           href="/gear"
         >
           My Gear
-        </a>
+        </Link>
       </div>
     </div>
     <div>
@@ -39,24 +39,24 @@ const Footer = () => {
         Learn
       </h3>
       <div className="flex flex-col space-y-2">
-        <a
+        <Link
           className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
           href="/courses"
         >
           Courses
-        </a>
-        <a
+        </Link>
+        <Link
           className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
           href="/tutorials"
         >
           Tutorials
-        </a>
-        <a
+        </Link>
+        <Link
           className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
           href="/notes"
         >
           Notes
-        </a>
+        </Link>
       </div>
     </div>
     <div>
@@ -64,24 +64,24 @@ const Footer = () => {
         Legal
       </h3>
       <div className="flex flex-col space-y-2">
-        <a
+        <Link
           className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
           href="/terms"
         >
           Terms
-        </a>
-        <a
+        </Link>
+        <Link
           className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
           href="/privacy"
         >
           Privacy
-        </a>
-        <a
+        </Link>
+        <Link
           className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
           href="/refund-policy"
         >
           Refund
-        </a>
+        </Link>
       </div>
     </div>
     <div>
@@ -89,42 +89,42 @@ const Footer = () => {
         Social
       </h3>
       <div className="flex flex-col space-y-2">
-        <a
-          href="https://github.com/codewithharry"
+        <Link
+          href="#"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center space-x-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
         >
           <Github/>
           <span>GitHub</span>
-        </a>
-        <a
-          href="https://x.com/codewithharry"
+        </Link>
+        <Link
+          href="#"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center space-x-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
         >
           <Twitter/>
           <span>Twitter (X)</span>
-        </a>
-        <a
-          href="https://youtube.com/@codewithharry"
+        </Link>
+        <Link
+          href="s#"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center space-x-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
         >
           <Youtube/>
           <span>YouTube</span>
-        </a>
-        <a
-          href="https://facebook.com/codewithharry"
+        </Link>
+        <Link
+          href="#"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center space-x-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white"
         >
          <Facebook/>
           <span>Facebook</span>
-        </a>
+        </Link>
       </div>
     </div>
   </div>
