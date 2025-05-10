@@ -9,6 +9,7 @@ import {
   SheetHeader,
   SheetTrigger,
 } from '@/components/ui/sheet'; // adjust path if needed
+import { Button } from '../ui/button';
 
 export default function Navbar() {
   return (
@@ -50,6 +51,12 @@ export default function Navbar() {
               >
                 Contact
               </Link>
+               <Link
+                href="/login"
+                className="block text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400"
+              >
+                <Button>Login</Button>
+              </Link>
               <ModeToggle />
             </nav>
           </SheetContent>
@@ -75,6 +82,12 @@ export default function Navbar() {
           className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400"
         >
           Contact
+        </Link>
+         <Link
+          href="/login"
+          className="text-gray-700 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400"
+        >
+         <Button>Login</Button>
         </Link>
         <ModeToggle />
       </div>

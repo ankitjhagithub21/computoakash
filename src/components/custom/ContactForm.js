@@ -5,6 +5,7 @@ import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea";
 import { Loader2 } from "lucide-react";
 import { useState } from "react"
+import toast from "react-hot-toast";
 
 
 const ContactForm = () => {
@@ -14,15 +15,22 @@ const ContactForm = () => {
     e.preventDefault();
     setLoading(true)
     try {
-      const res = await fetch('/api/contacts', {
+      const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
       });
 
-      const data = await res.json();
-      alert(data.message)
-      setFormData({ name: '', email: '', message: '' });
+     if(res.ok){
+       const data = await res.json();
+       setFormData({ name: '', email: '', message: '' });
+       toast.success(data.message)
+
+     }else{
+      toast.error(data.message)
+     }
+    
+      
     } catch (error) {
       console.log(error)
     }finally{

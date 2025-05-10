@@ -4,6 +4,7 @@ import { ThemeProvider } from "@/components/theme-provider"
 import "./globals.css";
 import Banner from "@/components/custom/Banner";
 import Footer from "@/components/custom/Footer";
+import { Toaster } from "react-hot-toast";
 
 
 export const metadata = {
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
             disableTransitionOnChange
           >
              <Navbar/>
+             <Toaster/>
             {children}
             <Banner/>
             <Footer/>
