@@ -3,6 +3,7 @@
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
+import {useRouter} from "next/navigation"
 
 import { Button } from "@/components/ui/button"
 import {
@@ -31,6 +32,7 @@ const formSchema = z.object({
 
 
 export function LoginForm() {
+  const router = useRouter()
   const [loading,setLoading] = useState(false)
   const form = useForm({
     resolver: zodResolver(formSchema),
@@ -53,6 +55,7 @@ export function LoginForm() {
       const data = await res.json()
       if(res.ok){
         toast.success(data.message)
+        router.push("/")
       }else{
         toast.error(data.message)
       }

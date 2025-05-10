@@ -2,6 +2,7 @@ import { LoginForm } from "@/components/custom/LoginForm";
 import Link from "next/link";
 
 
+
 export default function Login() {
   return (
    <div className="max-w-6xl mx-auto w-full p-5 grid grid-cols-1 gap-10 md:grid-cols-2 my-10 items-center">
