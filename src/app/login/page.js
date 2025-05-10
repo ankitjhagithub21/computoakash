@@ -1,4 +1,5 @@
 import { LoginForm } from "@/components/custom/LoginForm";
+import Link from "next/link";
 
 
 export default function Login() {
@@ -10,6 +11,7 @@ export default function Login() {
    <div>
   <h2 className="text-3xl mb-5 font-medium">Login Now</h2>
     <LoginForm/>
+    <p className="mt-4 text-sm">Don't have an account ? <Link href={"/signup"} className="mt-3 hover:underline">Create here</Link> </p>
    </div>
    </div>
   );
