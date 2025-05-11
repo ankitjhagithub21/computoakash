@@ -1,5 +1,5 @@
 "use client"
-
+import { useAuth } from '@/context/AuthContext';
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { z } from "zod"
@@ -32,6 +32,7 @@ const formSchema = z.object({
 
 
 export function LoginForm() {
+  const { login } = useAuth();
   const router = useRouter()
   const [loading,setLoading] = useState(false)
   const form = useForm({
@@ -55,6 +56,7 @@ export function LoginForm() {
       const data = await res.json()
       if(res.ok){
         toast.success(data.message)
+        login(data.student)
         router.push("/")
       }else{
         toast.error(data.message)
