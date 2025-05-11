@@ -14,9 +14,11 @@ import { Button } from '../ui/button';
 export default function Navbar() {
   return (
     <nav className="w-full bg-white dark:bg-gray-900 shadow-md px-6 py-4 flex items-center justify-between sticky top-0 z-50">
-      <div className="text-2xl font-bold text-gray-800 dark:text-white">
-        <Link href="/">ComputoAkash</Link>
-      </div>
+      
+        <Link href="/" className='text-lg'>
+          <Button variant={"outline"}>ComputoAkash</Button>
+        </Link>
+     
 
       {/* Mobile Menu */}
       <div className="md:hidden">
