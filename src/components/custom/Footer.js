@@ -128,8 +128,8 @@ const Footer = () => {
       </div>
     </div>
   </div>
-  <div className="text-center mt-8 text-sm text-gray-600 dark:text-gray-400">
-    Made with ❤️ and ☕ in India
+  <div className="text-center mt-8  text-gray-600 dark:text-gray-400">
+    Copyright &copy;  ComputoAkash | All right reserved
   </div>
 </footer>
 

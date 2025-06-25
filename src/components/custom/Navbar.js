@@ -80,6 +80,9 @@ export default function Navbar() {
               <Link href="/" className="block hover:text-blue-600 dark:hover:text-blue-400">
                 Home
               </Link>
+                <Link href="/about" className="block hover:text-blue-600 dark:hover:text-blue-400">
+                About
+              </Link>
               <Link href="/courses" className="block hover:text-blue-600 dark:hover:text-blue-400">
                 Courses
               </Link>
@@ -97,6 +100,9 @@ export default function Navbar() {
       <div className="hidden md:flex items-center gap-6">
         <Link href="/" className="hover:text-blue-600 dark:hover:text-blue-400">
           Home
+        </Link>
+         <Link href="/about" className="hover:text-blue-600 dark:hover:text-blue-400">
+          About
         </Link>
         <Link href="/courses" className="hover:text-blue-600 dark:hover:text-blue-400">
           Courses

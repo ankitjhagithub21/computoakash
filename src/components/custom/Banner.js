@@ -25,7 +25,7 @@ const Banner = () => {
     </p>
     <div className="flex justify-center">
       <Link href="/login">
-        <Button >Start Now</Button>
+        <Button size={"lg"}>Start Now</Button>
       </Link>
     </div>
   </div>
