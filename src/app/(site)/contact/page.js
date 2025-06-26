@@ -1,7 +1,7 @@
 import ContactForm from "@/components/custom/ContactForm";
 
 
-export default function Contact() {
+export default function ContactPage() {
   return (
    <section className="relative">
   <div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">

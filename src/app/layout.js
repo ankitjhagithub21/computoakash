@@ -1,9 +1,7 @@
 
-import Navbar from "@/components/custom/Navbar";
+
 import { ThemeProvider } from "@/components/theme-provider"
 import "./globals.css";
-import Banner from "@/components/custom/Banner";
-import Footer from "@/components/custom/Footer";
 import { Toaster } from "react-hot-toast";
 import { AuthProvider } from "@/context/AuthContext";
 
@@ -18,25 +16,24 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-  <body >
-    <ThemeProvider
-      attribute="class"
-      defaultTheme="system"
-      enableSystem
-      disableTransitionOnChange
-    >
-      <AuthProvider>
-        <Navbar />
-        <Toaster />
-        {children}
-        <Banner />
-        <Footer />
-      </AuthProvider>
+      <body >
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <AuthProvider>
 
-    </ThemeProvider>
+            <Toaster />
+            {children}
+
+          </AuthProvider>
+
+        </ThemeProvider>
 
 
-  </body>
+      </body>
     </html >
   );
 }
