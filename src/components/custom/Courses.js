@@ -35,22 +35,22 @@ const Courses = () => {
         },
          {
             id:5,
-            title:"Diploma in Computer Application",
+            title:"Desktop Publishing",
             image:"/c5.jpeg"
         },
          {
             id:6,
-            title:"Desktop Publishing",
+            title:"Diploma in Desktop Publishing",
             image:"/c6.jpeg"
         },
          {
             id:7,
-            title:"Diploma in Desktop Publishing",
+            title:"Diploma in Hardware Technology",
             image:"/c7.jpeg"
         },
          {
             id:8,
-            title:"Diploma in Hardware Technology",
+            title:"Diploma in Financial Accounting",
             image:"/c8.jpeg"
         }
        

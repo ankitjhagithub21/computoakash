@@ -233,9 +233,9 @@ export default function AboutPage() {
       </section>
 
       {/* Founder's Message */}
-      <section className="py-16 px-4 bg-yellow-50">
+      <section className="py-16 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8">
             A Personal Message
           </h2>
           
@@ -246,7 +246,7 @@ export default function AboutPage() {
               computer education paaye, Aage badhe aur Digital Bharat ka hissa bane"
             </blockquote>
             <footer className="text-lg font-semibold text-gray-800">
-              — Akash Raz, Founder & Director
+              — Akash Raz, Founder & Director | Mr. Sogen Kumar, Co-Founder
             </footer>
           </div>
         </div>
