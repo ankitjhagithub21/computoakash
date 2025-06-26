@@ -31,7 +31,7 @@ const Hero = () => {
 
               </h2>
             </header>
-            <p className="text-base md:text-xl text-gray-700 dark:text-gray-300 max-w-3xl leading-relaxed">
+            <p className="text-base md:text-xl text-gray-800 dark:text-gray-200 max-w-3xl leading-relaxed">
               Confused about where to begin? Don’t worry — I’ve created this platform just for students like you <strong>ComputoAkash</strong> is my effort to teach, you’ll learn step by step, in simple language, with full guidance and real projects.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
