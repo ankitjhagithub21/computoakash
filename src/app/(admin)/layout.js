@@ -1,8 +1,15 @@
+import { AdminSidebar } from "@/components/admin/AdminSidebar";
+import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
+
 export default function AdminLayout({ children }) {
   return (
-    <div>
-      <nav>Admin Sidebar</nav>
-      <main>{children}</main>
-    </div>
+    <SidebarProvider>
+
+      <AdminSidebar/>
+      <main>
+        <SidebarTrigger/>
+        {children}
+      </main>
+    </SidebarProvider>
   );
 }

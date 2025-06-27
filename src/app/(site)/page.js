@@ -1,14 +1,14 @@
 
 
 import Hero from "@/components/custom/Hero";
-import Courses from "@/components/custom/Courses";
 import Reviews from "@/components/custom/Reviews";
+import CoursesPage from "./courses/page";
 
 export default function HomePage() {
   return (
     <>
       <Hero/>
-      <Courses/>
+      <CoursesPage/>
       <Reviews/>
     </>
   );
